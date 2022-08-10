@@ -1,0 +1,3 @@
+# Use for you date field to be able for Date Picker from Qlik Dashboard Bundle
+
+Floor([Your_date_field]) as Date_for_calendar
