@@ -1,0 +1,8 @@
+# Use in Multi KPS dashboard. Styles -> Css
+# This is just an example
+# You can change colors, degree and gradient by changing percentage of each color
+
+.qv-panel-sheet {
+background: rgb(16,207,201);
+background: linear-gradient(169deg, rgba(16,207,201,1) 0%, rgba(255,255,255,1) 55%);
+}
