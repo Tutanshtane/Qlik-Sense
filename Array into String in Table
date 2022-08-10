@@ -1,0 +1,13 @@
+# If you have (one shot or one opportunity) a collumn with array's and you need to get every value from list
+
+load 
+keyColumn,
+KeepChar(SubField(array_collumn1,','),'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVQXYZ 1234567890 абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЧЦЩШЪЫЬЭЮЯ -') 
+as string_collumn1,
+KeepChar(SubField(array_collumn2,','),'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVQXYZ 1234567890 абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЧЦЩШЪЫЬЭЮЯ -') 
+as string_collumn2
+Resident your_table
+
+
+
+# Use KeepChar if your arrays looks like: ['value1','value2', etc.]
